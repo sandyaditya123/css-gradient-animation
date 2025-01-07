@@ -1,0 +1,34 @@
+* {
+    font-family: Impact, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-size: 200%;
+    background-image: linear-gradient(90deg, #00DBDE 6%, #FC00FF 94%);
+    animation: gradient-animation 20s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+h1 {
+    font-size: 6.5rem;
+    background: #ad5389;
+    background-image: linear-gradient(to right, #5b207a, #ad5389);
+    background-clip: text;
+    background-size: 200%;
+    color: transparent;
+    filter: drop-shadow(2px 1px 3px rgba(0, 0, 0, 1));
+    animation: gradient-animation 20s infinite alternate;
+}
